@@ -1,0 +1,49 @@
+.create-warranty-card{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    min-width: 350px;
+    margin: 0px auto;
+    /* height: 250px; */
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+.create-warranty-card > div{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #c60000;
+    margin: 5px 0px;
+
+}
+
+input{
+    border:none !important;
+    background-color: #f3f3f3;
+}
+
+.update-card{
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: 350px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.update-card div{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 2px solid #c60000;
+    margin: 5px 0px;
+}
+
+label{
+    font-size: 0.6rem;
+}

@@ -1,0 +1,50 @@
+.box-1{
+    width: 50%;
+    min-width: 350px;
+    border: 2px solid red;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F3F3F3;
+    margin: 20px auto;
+}
+
+#admin-button{
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+button{
+    border: none;
+    background-color: #c60000;
+    border-radius: 22px;
+    color: white;
+    padding: 5px 20px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid #c60000;
+    padding: 5px 40px;
+}
+
+.data-box{
+    border: 2px solid red;
+    background-color: #F3F3F3;
+    width: 50%;
+    min-width: 350px;
+    margin: 20px auto;
+}
+
+.row{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    color:#515151;
+    margin: 20px a;
+    border-bottom: 1px solid #c60000;
+}

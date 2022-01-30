@@ -1,0 +1,18 @@
+.login-name{
+    width: 50%;
+    min-width: 350px;
+    max-width: 500px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f3f3f3;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.login-input{
+    border-bottom: 2px solid #c60000 !important; 
+    margin-bottom: 20px;
+}
