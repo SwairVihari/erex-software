@@ -13,9 +13,10 @@
 
 #admin-button{
     position: absolute;
-    right: 50%;
-    transform: translateX(50%);
-    bottom: 20px;
+    right: 0%;
+  
+    top: 20px;
+    
 }
 
 button{
@@ -37,19 +38,29 @@ input{
 }
 
 .data-box{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: #F3F3F3;
     width: 50%;
     min-width: 350px;
     margin: 20px auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.row{
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px;
-    color:#515151;
-    margin: 20px a;
-    border-bottom: 1px solid #c60000;
+.data-box p{
+    font-weight: 900;
+    text-align: center;
 }
+
+.termsandcondition{
+    margin: 20px 20px;
+    background-color: #f3f3f3;
+    padding: 20px;
+}
+
+#last-term p{
+    font-weight: 700;
+}
+

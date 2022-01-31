@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import './Admin.css'
 import { useNavigate } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Admin = () => {
     const [serial, setSerial] = useState()
@@ -138,6 +140,7 @@ const Admin = () => {
 
   return(
   <>
+  <Navbar/>
   {token && 
    <div>
     <div className='create-warranty-card'>
@@ -163,7 +166,7 @@ const Admin = () => {
         </div>
 
         <div>
-        <label>Maf. Date</label>
+        <label>Mfg. Month</label>
         <input type='date' onChange={(event)=>{setMfg(event.target.value)}} name='manifactureDate' placeholder='Enter Manifacture Date'></input>
       
         </div>
@@ -201,7 +204,7 @@ const Admin = () => {
         </div>
 
         <div>
-        <label>Maf. Date</label>
+        <label>Mfg. Date</label>
         <input type='date' value={stringTodate(updatemfg)}  onChange={(event)=>{setUpdateMfg(event.target.value)}} placeholder='mfg'></input>
         </div>
 
@@ -224,6 +227,7 @@ const Admin = () => {
 
   </div>
 }
+<Footer/>
   </>);
 };
 

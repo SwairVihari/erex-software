@@ -1,0 +1,53 @@
+
+footer{
+    color:black;
+    background-color: white;
+    padding: 50px 50px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer h4{
+    font-size: 0.8rem;
+  }
+  
+  .footer-erex img{
+    width: 300px;
+    /* border: 2px solid red; */
+    margin-bottom: 50px;
+  }
+  
+  .footer-address{
+    /* border: 2px solid green; */
+    margin: 40px 0px;
+    width: 50%;
+  }
+  
+  .footest{
+    background-color: rgb(31, 31, 31);
+    color: white;
+    padding: 20px 0px;
+  }
+  
+  .copyright{
+    text-align: center;
+  
+    font-size: 1.2rem;
+  }
+  
+  .social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media .fab{
+    margin: 0px 10px 0 0 ;
+  }
+  
+  .social-media a{
+    color: #C60000;
+    transform: scale(1.1);
+  }
