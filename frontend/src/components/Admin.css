@@ -47,3 +47,11 @@ input{
 label{
     font-size: 0.6rem;
 }
+
+
+
+#logout-button-div{
+    /* border: 2px solid red; */
+    width: 100px;
+    margin: 0 auto;
+}

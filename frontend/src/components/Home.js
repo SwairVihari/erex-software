@@ -25,6 +25,7 @@ const Home = () => {
 
 
     const sumbitHandler = async () => {
+        try{
         const {data} = await axios.get(`/api/v1/item/${serial}`)
          setData1(data);
          setvoltage(data.product.volt);
@@ -32,6 +33,10 @@ const Home = () => {
          setmfg(data.product.manifactureDate);
          setreplacement(data.product.ReplacementWarrantyExpireMonth);
          setservice(data.product.ServiceWarrantyExpireMonth);
+        }
+        catch(error){
+            alert("Please Enter Valid Serial Number")
+        }
     }
 
 
@@ -45,7 +50,7 @@ const Home = () => {
       <>
   <div className='box-1'>
     
-         <input placeholder='Enter Your Serial Number' onChange={(event)=>{ setSerial(event.target.value)}} name='serial'></input>
+         <input id='home-serial-input' placeholder='Enter Your Serial Number' onChange={(event)=>{ setSerial(event.target.value)}} name='serial'></input>
         <button type="submit" onClick={sumbitHandler}>GETDATA</button>
   </div>
 

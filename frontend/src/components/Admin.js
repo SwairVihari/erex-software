@@ -218,8 +218,10 @@ const Admin = () => {
 
     </div>
 
+    <div id='logout-button-div'>
+           <button id='logout-button' onClick={LogoutHandler}>LOGOUT</button>
+    </div>
 
-     <button onClick={LogoutHandler}>LOGOUT</button>
   </div>
 }
   </>);
