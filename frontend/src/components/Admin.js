@@ -178,7 +178,7 @@ const Admin = () => {
         </div>
 
         <div>
-        <label>ServiceWarrantyExpireMonth</label>
+        <label>Service Warranty Expire Month</label>
         <input type='date' onChange={(event)=>{setService(event.target.value)}} name='ServiceWarrantyExpireMonth' ></input>
         </div>
 

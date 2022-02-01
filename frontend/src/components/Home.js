@@ -27,7 +27,7 @@ const Home = () => {
         const month = date.toLocaleString('default', { month: 'long' });
         const year = date.getFullYear()
 
-        return month + " " + year
+        return [month,year]
         // console.log(date.getMonth(), date.getFullYear())
     }
 
@@ -80,7 +80,7 @@ const Home = () => {
          </div>)}
  </div>
 
-{data1 && 
+{/* {data1 && 
 <VerticalTimeline>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -91,11 +91,13 @@ const Home = () => {
     icon={<WorkIcon img={manufacture}/>}
     
   >
+    <div className='timeline-harsh-box'>
     <h3 className="vertical-timeline-element-title">Manifacture Month</h3>
-    {/* <h4 className="vertical-timeline-element-subtitle"></h4> */}
+   
     <p>
      {`${stringTodate(mfg)}`}
     </p>
+    </div>
   </VerticalTimelineElement>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
@@ -127,7 +129,72 @@ const Home = () => {
     {`${stringTodate(service)}`}
     </p>
   </VerticalTimelineElement>
-</VerticalTimeline>}
+</VerticalTimeline>} */}
+
+  { data1&&<div className='revised-table'>
+  <div className='revised-table-item'>
+    <div className='revised-table-item-img-container'>
+      <img src={manufacture}/>
+    </div>
+    <div className='arrow' >
+
+    </div>
+
+    <div className='revised-table-item-data'>
+      <div className='revised-table-item-data-date'>
+          {stringTodate(mfg)[0]} <br/>
+          {stringTodate(mfg)[1]}
+      </div>
+
+      <div className='revised-table-item-data-warranty'>
+          Manifacture Month
+      </div>
+    </div>
+  </div>
+
+  <div className='revised-table-item'>
+    <div id='replacement-harsh-img-container' className='revised-table-item-img-container'>
+      <img src={replacement1}/>
+    </div>
+    <div id='replacement-harsh-arrow' className='arrow' >
+
+    </div>
+
+    <div className='revised-table-item-data'>
+      <div id='replacement-harsh-date' className='revised-table-item-data-date'>
+          {stringTodate(replacement)[0]} <br/>
+          {stringTodate(replacement)[1]}
+      </div>
+
+      <div className='revised-table-item-data-warranty'>
+          Replacement Warranty* Expire Month
+      </div>
+    </div>
+  </div>
+
+  <div className='revised-table-item'>
+    <div id='service-harsh-img-container' className='revised-table-item-img-container'>
+      <img src={servicement}/>
+    </div>
+    <div id='service-harsh-arrow' className='arrow' >
+
+    </div>
+
+    <div className='revised-table-item-data'>
+      <div id='service-harsh-date' className='revised-table-item-data-date'>
+          {stringTodate(service)[0]} <br/>
+          {stringTodate(service)[1]}
+      </div>
+
+      <div className='revised-table-item-data-warranty'>
+          Service Warranty* Expire Month
+      </div>
+    </div>
+  </div>
+
+
+
+</div>}
 
 <div className='termsandcondition'>
 
