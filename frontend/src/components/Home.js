@@ -68,7 +68,7 @@ const Home = () => {
   <div className='box-2'>
        
 
-        {
+        {data1 &&
         
         (<div className='data-box'> 
         {/* <h1>Serial{data1.product.serial}</h1>  */}
@@ -131,7 +131,7 @@ const Home = () => {
   </VerticalTimelineElement>
 </VerticalTimeline>} */}
 
-  {<div className='revised-table'>
+  {data1 && <div className='revised-table'>
   <div className='revised-table-item'>
     <div className='revised-table-item-img-container'>
       <img src={manufacture}/>
