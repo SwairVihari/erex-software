@@ -88,7 +88,8 @@ input{
     /* border: 2px solid green; */
     display: flex;
     align-items: center;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     margin: 20px auto;
     justify-content: space-evenly;
 }
@@ -151,7 +152,7 @@ input{
 .revised-table-item-data-warranty{
     /* border:2px solid magenta; */
     font-weight: 600;
-    margin: auto 22px;
+    /* margin: auto 22px; */
     width: 170px;
    
 }

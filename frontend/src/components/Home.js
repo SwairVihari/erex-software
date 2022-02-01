@@ -131,7 +131,7 @@ const Home = () => {
   </VerticalTimelineElement>
 </VerticalTimeline>} */}
 
-  { data1&&<div className='revised-table'>
+  {data1 && <div className='revised-table'>
   <div className='revised-table-item'>
     <div className='revised-table-item-img-container'>
       <img src={manufacture}/>
