@@ -68,15 +68,15 @@ const Home = () => {
   <div className='box-2'>
        
 
-        {data1 &&
+        {
         
         (<div className='data-box'> 
         {/* <h1>Serial{data1.product.serial}</h1>  */}
         {/* <h1> Voltage{data1.product.volt}</h1>  */}
         {/* <h1>AmpHour{data1.product.amphour}</h1> */}
             
-          <p>  {`Configuration: ${voltage} V ${amphour} AH`} </p>
-
+          <p>  {`Configuration`} </p>
+          <p>{`${voltage} V ${amphour} AH`}</p>
          </div>)}
  </div>
 
@@ -131,7 +131,7 @@ const Home = () => {
   </VerticalTimelineElement>
 </VerticalTimeline>} */}
 
-  {data1 && <div className='revised-table'>
+  {<div className='revised-table'>
   <div className='revised-table-item'>
     <div className='revised-table-item-img-container'>
       <img src={manufacture}/>
@@ -147,7 +147,7 @@ const Home = () => {
       </div>
 
       <div className='revised-table-item-data-warranty'>
-          Manifacture Month
+          Manufacture Month
       </div>
     </div>
   </div>

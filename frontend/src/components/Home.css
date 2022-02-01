@@ -40,18 +40,23 @@ input{
 .data-box{
     /* border: 2px solid red; */
     background-color: #F3F3F3;
-    width: 50%;
-    min-width: 350px;
+    width: 90%;
+    max-width: 500px;
+    min-width: 300px;
     margin: 20px auto;
-    height: 80px;
+    /* height: 80px; */
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #c60000;
+    padding: 0px 5px;
+    flex-direction: column;
 }
 
 .data-box p{
     font-weight: 900;
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .termsandcondition{
