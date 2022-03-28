@@ -35,6 +35,9 @@ input{
 
 #home-serial-input{
     border-bottom: 1px solid #c60000 !important;
+    padding: 0px 0px !important;
+    margin: 12px 20px;
+
 }
 
 .data-box{

@@ -60,8 +60,11 @@ const Home = () => {
 
 <Navbar/>
   <div className='box-1'>
-    
-         <input id='home-serial-input' placeholder='Enter Your Serial Number' onChange={(event)=>{ setSerial(event.target.value)}} name='serial'></input>
+        <label>Enter Serial Number below</label>
+      <div style={{display:"flex"}}>
+        <p>8818/LI+/</p>
+         <input id='home-serial-input' value={serial} placeholder='Serial Number' onChange={(event)=>{ setSerial(event.target.value)}} name='serial'></input>
+         </div>
         <button type="submit" onClick={sumbitHandler}>GETDATA</button>
   </div>
 
