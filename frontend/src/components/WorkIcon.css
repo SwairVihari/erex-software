@@ -1,0 +1,15 @@
+#workiconimg{
+    width: 40px;
+    height: 40px ;
+    margin: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    #workiconimg{
+        width: 20px;
+        height: 20px ;
+        margin: 10px;
+    }
+
+}

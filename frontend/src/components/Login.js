@@ -40,7 +40,7 @@ const Login = () => {
 
   return <div className='login-name'>
       
-            <input className='login-input' placeholder='email' onChange={(event)=>{setEmail(event.target.value)}} name='email'></input>
+            <input className='login-input' placeholder='username' onChange={(event)=>{setEmail(event.target.value)}} name='email'></input>
             <input className='login-input' placeholder='password' onChange={(event)=>{setPassword(event.target.value)}} name='password'></input>
            
             <button onClick={submitHandler}>submit</button>

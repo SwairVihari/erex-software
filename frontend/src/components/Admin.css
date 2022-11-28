@@ -9,6 +9,7 @@
     /* height: 250px; */
     background-color: #f3f3f3;
     padding: 20px;
+    margin: 20px auto;
 }
 
 .create-warranty-card > div{
@@ -46,4 +47,12 @@ input{
 
 label{
     font-size: 0.6rem;
+}
+
+
+
+#logout-button-div{
+    /* border: 2px solid red; */
+    width: 100px;
+    margin: 0 auto;
 }
